@@ -1,0 +1,180 @@
+/* 폰트 */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* ================= 태그 스타일 ================= */
+
+body {
+  font-family: "Nanum Gothic", sans-serif;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* 테이블 관련 */
+th {
+  background-color : #E9EDF0;
+  text-align: center;
+  vertical-align: center;
+}
+
+tr {
+  height: 28px;
+  vertical-align: center;
+}
+
+td {
+  width: 28px;
+  text-align: center;
+}
+
+/* 링크 */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+
+/* ================= 클래스 스타일 ================= */
+
+/* 폰트 굵기 */
+.normal     { font-weight: 400 }
+.bold       { font-weight: 700 }
+.bolder     { font-weight: 800 }
+.light      { font-weight: 300 }
+
+/* 볼링 점수 : 스페어 */
+.spare {
+  background: url('../img/spare.png');
+  background-size: 100% 100%;
+}
+
+/* 볼링 점수 : 스트라이크 */
+.strike {
+  background: url('../img/strike.png');
+  background-size: 100% 100%;
+}
+
+/* 볼링 점수 : 아무 것도 입력 없을 시 */
+.reset {
+  background-color: white;
+}
+
+/* 볼링 점수 : 진행 중 표시 */
+.recent {
+  background-color: #F3D8DA;
+}
+
+/* 깜박이는 효과 */
+.blinking {
+  -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+  -moz-animation:blink 1.5s ease-in-out infinite alternate;
+  animation:blink 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes blink{
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@-moz-keyframes blink{
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+@keyframes blink{
+  0% {opacity:0;}
+  50% {opacity:1;}
+}
+
+/* 탭 메뉴 관련 */
+ul.tabs {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+  height: 32px;
+  border-bottom: 1px solid #eee;
+  border-left: 1px solid #eee;
+  width: 100%;
+  font-size:16px;
+}
+
+ul.tabs li {
+  float: left;
+  text-align:center;
+  cursor: pointer;
+  width:50%;
+  height: 31px;
+  line-height: 31px;
+  border: 1px solid #eee;
+  border-left: none;
+  font-weight: bold;
+  background: #fafafa;
+  overflow: hidden;
+  position: relative;
+}
+
+ul.tabs li.active {
+  background: #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.tab_container {
+  border: 1px solid #eee;
+  border-top: none;
+  clear: both;
+  float: left;
+  width: 248px;
+  background: #FFFFFF;
+}
+
+.tab_content {
+  padding: 5px;
+  font-size: 16px;
+  display: none;
+}
+
+.tab_container .tab_content ul {
+  width:100%;
+  margin:0px;
+  padding:0px;
+}
+
+.tab_container .tab_content ul li {
+  padding:5px;
+  list-style:none
+}
+
+/* 새로고침 버튼 회전 */
+a .rotate {
+  -webkit-transition: 0.6s ease-out;
+  -moz-transition: 0.6s ease-out;
+  transition: 0.6s ease-out;
+}
+
+a:hover .rotate {
+  -webkit-transform: rotateZ(240deg);
+  -moz-transform: rotateZ(240deg);
+  transform: rotateZ(240deg);
+}
+
+/* ================= ID 스타일 ================= */
+
+/* 시작 버튼 */
+#btnStart {
+  font-size: 1.8rem;
+}
+
+/* 점수 입력 영역 */
+#scoreInput {
+  margin-top:40px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #E9EDF0;
+  border-radius: 10px 10px / 10px 10px;
+}
