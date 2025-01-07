@@ -8,7 +8,7 @@
             </div>
             <div class="modal-body">
                 <!-- iframe : 모바일 네이버지도 -->
-                <iframe src="https://m.map.naver.com/search2/search.nhn?query=볼링장&sm=hty&style=v4#/map/1" frameborder="0" scrolling="auto" align="center" width="100%" height="500px">주변 볼링장 찾아보기</iframe>
+                <iframe src="https://m.map.naver.com/search2/search.naver?query=%EB%B3%BC%EB%A7%81%EC%9E%A5&sm=hty&style=v4#/map/1" frameborder="0" scrolling="auto" align="center" width="100%" height="500px">주변 볼링장 찾아보기</iframe>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-outline-secondary" onclick="history.back()"><i class="fas fa-angle-left"></i></button> <!-- 뒤로가기 버튼 -->

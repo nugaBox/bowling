@@ -6,9 +6,10 @@
 //========================================================
 
     /**  DB 연결 정보  */
-    $dbHost = "localhost:3306";            // DB 주소
-    $dbUserID = "dbuser";             // 사용자 ID
-    $dbUserPW = "DBuser001!";             // 사용자 PW
+    // 기존 : dbuser / DBuser001!
+    $dbHost = "localhost:6306";            // DB 주소
+    $dbUserID = "ngjang";             // 사용자 ID
+    $dbUserPW = "Mdbwkck001!";             // 사용자 PW
     $dbName = "bowlingdb";                  // DB명
 
     #$dbConn = mssql_connect($dbHost, $dbUserID, $dbUserPW) or DIE("DB서버 연결 오류");
